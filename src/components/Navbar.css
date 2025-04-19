@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .navbar-menu li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    background-color: #e9ecef;
+    color: #1a73e8;
+  }
+  
+  .navbar-menu li a.active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+  }
+  
+  .navbar-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+  }
+  
+  .navbar-button:hover {
+    background-color: #1765cc;
+  }
+  
+  /* Service button highlight */
+  .service-highlight {
+    background-color: #e8f0fe;
+    border-radius: 4px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .navbar-logo {
+      margin-bottom: 1rem;
+    }
+    
+    .navbar-menu {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 1rem;
+      gap: 1rem;
+    }
+    
+    .navbar-button {
+      width: 100%;
+    }
+  }
